@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Resumo do Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./fav.ico">
+</head>
+<body>
+    <header>
+        <div class="container menu-topo" onclick='javascript:window.location.href ="/index.html"'>
+            <h1>MBA Engenharia de dados</h1>
+            <p class="tagline">Mackenzie</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <article class="post">
+            <h2>Plano de Governança de Dados</h2>
+            <p>Publicado em: <time datetime="2024-11-05">05 de Novembro de 2024</time></p>
+
+            <section>
+                <b>1. Introdução</b>
+                <p><i>Este documento apresenta um Plano de Governança de Dados simulado para o Banco Central do Brasil. Ressalta-se que este plano é apenas uma análise estudantil e não representa dados reais da instituição pública. O objetivo é estruturar, formalizar e implementar uma estratégia eficaz de governança dos dados, visando garantir qualidade, segurança, acessibilidade e conformidade, alinhando os dados aos objetivos estratégicos da organização.</i></p>
+                <br/>
+                <b>Objetivos do Plano</b>
+                <p>Reestruturar e catalogar os dados existentes bem como suas propriedades e responsáveis, iniciar uma cultura <i>data-driven</i> e <i>data centric</i> na organização com foco no armazenamento e gestão de toda a informação trafegada na rede. Esses dados posteriormente poderão ser utilizados para tomada de decisão.</p>
+            </section>
+            
+            <section>
+                <b>2. Avaliação de Maturidade de Dados</b>
+                <p><b>Avaliação de Maturidade de Dados (Modelo 5x10)</b></p>
+                <p>O relatório de maturidade orientado a dados 5x10 foi emitido através do <a href="https://data-driven.rubenbuitelaar.com">sítio online</a>. Anexado no final desse documento relatório de análise da maturidade.</p>
+                <br/>
+                <b>Resultado da avaliação</b>
+                <p>A nota obtida no teste identifica um estágio inicial de maturidade. Por estar no processo de análise, a empresa não possui uma cultura data centric. Existe uma força e reconhecimento de que os dados são responsáveis pelo direcionamento lógico da organização, entretanto as equipes principais e os setores não possuem uma estrutura de dados saudável o que inviabiliza um ambiente data-driven.</p>
+            </section>
+            
+            <section>
+                <b>3. Estrutura Operacional da Governança</b>
+                <p><b>3.1 Definição das Áreas de Conhecimento (Baseadas no DAMA)</b></p>
+                <p>Neste plano, focaremos nas áreas de:</p>
+                <ul>
+                    <li>Design e Modelagem de Dados: Visa a uniformidade e padronização de como os dados são projetados, estruturados e documentados.</li>
+                    <li>Armazenamento de Dados e Operações: Define processos para armazenar e gerenciar dados de forma eficiente e acessível, promovendo a coerência e evitando redundâncias.</li>
+                </ul>
+                <br/>
+                <p><b>3.2 Definição do Objetivo</b></p>
+                <p>O objetivo é reestruturar os dados existentes, implementando uma catalogação eficaz para que suas propriedades e responsáveis sejam claros. Esse processo busca iniciar uma cultura data-driven, onde os dados sejam o centro das decisões e estejam sempre disponíveis e homogêneos para o uso da organização.</p>
+                <br/>
+                <p><b>3.3 Identificação do Problema</b></p>
+                <p>Os principais problemas identificados são:</p>
+                <ul>
+                    <li>Dualidade das Informações: A existência de dados duplicados ou inconsistentes em diferentes locais.</li>
+                    <li>Acessos: Falta de clareza sobre a hierarquia e a lógica de acesso aos dados, com dados desconhecidos ou sem responsáveis definidos.</li>
+                    <li>Indisponibilidade: Falta de homogeneidade e coerência nos dados disponíveis, o que leva a esforços duplicados e a necessidade de rotas alternativas para obter informações precisas.</li>
+                </ul>
+            </section>
+            
+            <section>
+                <b>4. Criação do Comitê de Governança de Dados</b>
+                <p><b>4.1 Composição do Comitê</b></p>
+                <ul>
+                    <li>Chief Data Officer (CDO): Líder do comitê e responsável por definir a estratégia de dados da organização, promovendo uma cultura data-driven e assegurando que os dados sejam tratados como ativos estratégicos.</li>
+                    <li>Data Governance Manager: Responsável pela coordenação das atividades de governança de dados, como definição de políticas, padrões e monitoramento da qualidade dos dados.</li>
+                    <li>Data Stewards: Profissionais responsáveis por assegurar a qualidade, consistência e acessibilidade dos dados dentro de suas respectivas áreas ou domínios de negócio.</li>
+                    <li>Representantes de TI e Segurança da Informação: Garantem que a infraestrutura e as políticas de segurança estejam alinhadas com as necessidades de governança de dados, incluindo requisitos de armazenamento, acessos e integridade dos dados.</li>
+                    <li>Gestores de Departamentos-Chave: Representantes das áreas usuárias de dados para garantir que as necessidades de cada departamento sejam atendidas e que os dados sejam coerentes e acessíveis para uso nas decisões de negócios.</li>
+                    <li>Representante de Compliance e Legal: Garante que as práticas de governança de dados estejam em conformidade com as regulamentações aplicáveis (como LGPD ou GDPR), protegendo a privacidade e a segurança dos dados.</li>
+                </ul>
+                <br/>
+                <p><b>4.2 Modelo Operacional Federado</b></p>
+                <p>Será adotado um modelo federado, onde cada área tem autonomia sobre seus dados, mas deve seguir padrões definidos pelo comitê central. Isso permitirá que as áreas adaptem os dados às suas necessidades específicas, enquanto seguem diretrizes comuns para evitar duplicidade e inconsistência.</p>
+                <p>A escolha pelo modelo federado justifica-se pelo fato de a instituição ser muito grande, o que inviabilizaria uma estrutura centralizada devido à sobrecarga que isso imporia à alta direção, além da burocratização inerente a esse modelo. O modelo descentralizado, por sua vez, não parece atrativo, considerando que a empresa pública presta serviços à sociedade. Com esse modelo, a probabilidade de uma comunicação ineficaz entre as equipes poderia resultar em um desalinhamento dos processos.</p>
+                <br/>
+                <p><b>4.3 Papeis e Responsabilidades</b></p>
+                <ul>
+                    <li>Chief Data Officer (CDO): Define a visão estratégica de dados, lidera o comitê e toma decisões finais sobre políticas e práticas de governança.</li>
+                    <li>Data Governance Manager: Coordena a implementação das políticas e práticas de governança, gerencia os Data Stewards e assegura a execução das iniciativas de governança em toda a organização.</li>
+                    <li>Data Stewards: Monitora a qualidade e a consistência dos dados em seu domínio, aplica as políticas de governança e atua como ponto de contato para questões relacionadas aos dados nas áreas de negócio.</li>
+                    <li>Representantes de TI e Segurança: Responsáveis pela infraestrutura de dados e segurança, garantindo a integridade, disponibilidade e segurança dos dados.</li>
+                    <li>Executivos de Departamentos Funcionais: Representam as necessidades de dados de suas áreas e garantem que os dados atendam aos requisitos operacionais para suportar a tomada de decisões.</li>
+                    <li>Representante de Compliance e Legal: Monitora a conformidade com regulamentações de proteção de dados, apoiando na criação de políticas que atendam aos requisitos legais e regulatórios.</li>
+                </ul>
+            </section>
+            
+            <section>
+                <b>5. Gestão de Qualidade de Dados e Políticas</b>
+                <p><b>5.1 Qualidade de Dados</b></p>
+                <p>Para resolver os problemas de dualidade e indisponibilidade, serão adotadas as seguintes práticas de qualidade:</p>
+                <ul>
+                    <li>Precisão e Completude: Garantir que os dados estejam corretos e completos, evitando redundâncias.</li>
+                    <li>Consistência: Assegurar que os dados sejam consistentes em diferentes fontes, evitando duplicações.</li>
+                    <li>Disponibilidade e Atualidade: Definir padrões para que os dados estejam sempre atualizados e acessíveis.</li>
+                </ul>
+                <p>As métricas a serem monitoradas incluem:</p>
+                <ul>
+                    <li>Índice de duplicação de dados.</li>
+                    <li>Taxa de consistência entre fontes.</li>
+                    <li>Tempo de resposta para acesso aos dados.</li>
+                </ul>
+                <br/>
+                <p><b>5.2 Políticas de Governança de Dados</b></p>
+                <p>As políticas estabelecerão regras claras de acesso, uso e manutenção dos dados:</p>
+                <ul>
+                    <li>Política de Acesso: Estabelece a hierarquia e os direitos de acesso para garantir segurança e compliance.</li>
+                    <li>Política de Retenção e Descarte: Define o ciclo de vida dos dados para evitar armazenamento desnecessário.</li>
+                    <li>Política de Atualização e Verificação: Prevê a periodicidade de revisão e atualização dos dados, assegurando sua relevância.</li>
+                </ul>
+            </section>
+        </article>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 - Ramz. Todos os direitos reservados.</p><br>
+        </div>
+    </footer>
+</body>
+</html>

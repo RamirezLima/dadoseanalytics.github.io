@@ -9,8 +9,27 @@
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
-  }
-  
+}
+
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: underline;
+    color: #333;
+}
+
+.menu-topo{
+    cursor: pointer;
+}
+
 
 body {
     font-family: "JetBrains Mono", monospace, 'Arial', sans-serif;
@@ -76,6 +95,6 @@ footer p {
     margin: 0;
 }
 
-ul{
+ul {
     padding-left: 40px;
 }
